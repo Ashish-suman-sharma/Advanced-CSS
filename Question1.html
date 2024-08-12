@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Button Styling with CSS Variables</title>
+<style>
+    :root {
+        --primaryColor: #00b7ff;
+        --secondaryColor: #6c757d;
+    }
+
+    #primaryBtn {
+        background-color: var(--primaryColor);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+
+    #secondaryBtn {
+        background-color: var(--secondaryColor);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <button id="primaryBtn">Primary Button</button>
+    <button id="secondaryBtn">Secondary Button</button>
+</body>
+</html>
+
+<!-- Purpose of Using the `var()` Function in CSS
+
+The `var()` function in CSS lets you use and apply values from custom properties, which are like variables in CSS. These custom properties are set up by the designer and can store values like colors, font sizes, or spacing. Once you set these properties, you can use them throughout your CSS to make styling easier and more consistent.
+
+# Benefits of Using `var()`:
+
+1. Reusability:
+   2. If you define a custom property once, you can use it in many places in your CSS.
+   1. This avoids repeating the same values over and over, making your CSS cleaner and more consistent.
+
+2. Maintainability:
+   2. Changing a value in a custom property will automatically update everywhere that property is used.
+   1. This makes it easier to update things like colors or sizes because you only need to make the change in one place.
+
+3. Dynamic Changes:
+   2. You can use JavaScript to change the value of custom properties while your site is running.
+   1. This allows for interactive designs that can adjust based on user actions or other events.
+
+4. Scope and Inheritance:
+   2. Custom properties can be used for specific elements or areas of your site, and they can inherit values from their parent elements.
+   1. This makes it easier to manage complex styles, as changes in one place can affect multiple parts of your design.
+
+In summary, the `var()` function helps you manage and use values in a flexible and efficient way, making your CSS easier to work with and update. -->
+
+
